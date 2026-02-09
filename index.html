@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Triangle of Power: Iran, Israel & the United States | Geopolitical Analysis</title>
+    <meta name="description" content="In-depth analysis of the geopolitical triangle between Iran, Israel, and the United States">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+Pro:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+        
+        :root {
+            --navy: #1a2332;
+            --dark-navy: #0f1419;
+            --light-navy: #2a3f5f;
+            --red: #c41e3a;
+            --white: #ffffff;
+            --off-white: #f8f9fa;
+            --light-gray: #e9ecef;
+            --mid-gray: #6c757d;
+            --text-primary: #212529;
+            --text-secondary: #495057;
+            --accent-gold: #d4af37;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        [data-theme="dark"] {
+            --navy: #0f1419;
+            --dark-navy: #000000;
+            --light-navy: #1a2332;
+            --white: #1a2332;
+            --off-white: #0f1419;
+            --light-gray: #2a3f5f;
+            --text-primary: #e9ecef;
+            --text-secondary: #adb5bd;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Source Serif Pro', Georgia, serif;
+            background: var(--off-white);
+            color: var(--text-primary);
+            line-height: 1.8;
+            transition: var(--transition);
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: var(--navy);
+            color: var(--white);
+            padding: 2rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-bottom: 3px solid var(--red);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 900;
+            letter-spacing: -0.5px;
+        }
+
+        .logo .subtitle {
+            font-size: 0.6rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--accent-gold);
+            display: block;
+            margin-top: 0.2rem;
+        }
+
+        .nav-toggle {
+            display: none;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            color: var(--white);
+            cursor: pointer;
+        }
+
+        .theme-toggle {
+            background: transparent;
+            border: 2px solid var(--white);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: var(--transition);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .theme-toggle:hover {
+            background: var(--white);
+            color: var(--navy);
+            transform: scale(1.05);
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 100px;
+            width: 280px;
+            background: var(--white);
+            height: calc(100vh - 100px);
+            padding: 2rem 1rem;
+            box-shadow: 4px 0 20px rgba(0,0,0,0.05);
+            overflow-y: auto;
+            z-index: 100;
+            transition: var(--transition);
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+        }
+
+        .sidebar nav li {
+            margin: 0.5rem 0;
+        }
+
+        .sidebar nav a {
+            display: block;
+            padding: 0.8rem 1rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            border-left: 3px solid transparent;
+            transition: var(--transition);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+        }
+
+        .sidebar nav a:hover,
+        .sidebar nav a.active {
+            border-left-color: var(--red);
+            background: var(--light-gray);
+            padding-left: 1.5rem;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 280px;
+            padding: 3rem 2rem;
+            max-width: 900px;
+            transition: var(--transition);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--light-navy) 100%);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(212,175,55,0.1) 0%, transparent 70%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.2); opacity: 0.8; }
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero .subtitle-hero {
+            font-size: 1.3rem;
+            font-weight: 300;
+            opacity: 0.95;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero .lang-tags {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .lang-tag {
+            background: rgba(255,255,255,0.15);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-family: 'Inter', sans-serif;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Section Styles */
+        section {
+            background: var(--white);
+            margin-bottom: 2rem;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section:nth-child(1) { animation-delay: 0.1s; }
+        section:nth-child(2) { animation-delay: 0.2s; }
+        section:nth-child(3) { animation-delay: 0.3s; }
+        section:nth-child(4) { animation-delay: 0.4s; }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 1.5rem;
+            border-left: 5px solid var(--red);
+            padding-left: 1.5rem;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--light-navy);
+            margin: 2rem 0 1rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, rgba(196,30,58,0.1) 0%, rgba(196,30,58,0) 100%);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        /* Multi-language sections */
+        .lang-section {
+            background: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--accent-gold);
+        }
+
+        .lang-section.french::before {
+            content: '🇫🇷 Français';
+            display: block;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--red);
+            margin-bottom: 0.8rem;
+        }
+
+        .lang-section.hebrew {
+            direction: rtl;
+            text-align: right;
+        }
+
+        .lang-section.hebrew::before {
+            content: '🇮🇱 עברית';
+            display: block;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--red);
+            margin-bottom: 0.8rem;
+        }
+
+        /* Interactive Map */
+        .map-container {
+            background: var(--navy);
+            padding: 3rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .map {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            background: linear-gradient(180deg, #1a4d6d 0%, #2a5f7f 100%);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .country {
+            position: absolute;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .country:hover {
+            transform: scale(1.15);
+            z-index: 10;
+        }
+
+        .country.iran {
+            top: 30%;
+            right: 35%;
+            width: 120px;
+            height: 120px;
+            background: rgba(0, 150, 0, 0.85);
+            color: white;
+        }
+
+        .country.israel {
+            top: 50%;
+            left: 38%;
+            width: 100px;
+            height: 100px;
+            background: rgba(0, 83, 160, 0.85);
+            color: white;
+        }
+
+        .country.usa {
+            top: 15%;
+            left: 10%;
+            width: 140px;
+            height: 140px;
+            background: rgba(178, 34, 52, 0.85);
+            color: white;
+        }
+
+        .tension-line {
+            position: absolute;
+            height: 2px;
+            background: linear-gradient(90deg, rgba(196,30,58,0.6), rgba(212,175,55,0.6));
+            transform-origin: left center;
+            animation: pulse-line 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse-line {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 1; }
+        }
+
+        .line1 {
+            top: 25%;
+            left: 17%;
+            width: 200px;
+            transform: rotate(15deg);
+        }
+
+        .line2 {
+            top: 40%;
+            right: 35%;
+            width: 180px;
+            transform: rotate(-25deg);
+        }
+
+        .line3 {
+            top: 20%;
+            left: 15%;
+            width: 250px;
+            transform: rotate(45deg);
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--red);
+        }
+
+        .timeline-item {
+            margin: 2rem 0;
+            position: relative;
+            width: 45%;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            text-align: right;
+            padding-right: 3rem;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 55%;
+            text-align: left;
+            padding-left: 3rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: var(--red);
+            border: 4px solid var(--white);
+            border-radius: 50%;
+            top: 0;
+            box-shadow: 0 0 0 4px var(--light-gray);
+        }
+
+        .timeline-item:nth-child(odd)::before {
+            right: -10px;
+        }
+
+        .timeline-item:nth-child(even)::before {
+            left: -10px;
+        }
+
+        .timeline-year {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--red);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-content {
+            background: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Scenario Cards */
+        .scenario-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .scenario-card {
+            background: var(--light-gray);
+            padding: 2rem;
+            border-radius: 12px;
+            border-top: 4px solid;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .scenario-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        }
+
+        .scenario-card.escalation {
+            border-color: #d32f2f;
+        }
+
+        .scenario-card.diplomacy {
+            border-color: #388e3c;
+        }
+
+        .scenario-card.status-quo {
+            border-color: #f57c00;
+        }
+
+        .scenario-card h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .scenario-card .probability {
+            display: inline-block;
+            background: var(--navy);
+            color: var(--white);
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-family: 'Inter', sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        /* Lists */
+        ul {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            padding-left: 0.5rem;
+        }
+
+        li::marker {
+            color: var(--red);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--navy);
+            color: var(--white);
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-left: 280px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        footer p {
+            opacity: 0.8;
+            font-size: 0.95rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .sidebar {
+                transform: translateX(-100%);
+            }
+
+            .sidebar.active {
+                transform: translateX(0);
+            }
+
+            .main-content,
+            footer {
+                margin-left: 0;
+            }
+
+            .nav-toggle {
+                display: block;
+            }
+
+            .timeline-item {
+                width: 100%;
+                left: 0 !important;
+                text-align: left !important;
+                padding-left: 3rem !important;
+                padding-right: 0 !important;
+            }
+
+            .timeline::before {
+                left: 0;
+            }
+
+            .timeline-item::before {
+                left: -10px !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle-hero {
+                font-size: 1.1rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 2rem 1.5rem;
+            }
+
+            .main-content {
+                padding: 2rem 1rem;
+            }
+
+            .map {
+                height: 400px;
+            }
+
+            .country.usa {
+                width: 100px;
+                height: 100px;
+                font-size: 0.85rem;
+            }
+
+            .country.iran {
+                width: 90px;
+                height: 90px;
+                font-size: 0.85rem;
+            }
+
+            .country.israel {
+                width: 80px;
+                height: 80px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                The Triangle
+                <span class="subtitle">Geopolitical Analysis</span>
+            </div>
+            <button class="nav-toggle" onclick="toggleSidebar()">☰</button>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+        </div>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#intro" class="active">Introduction</a></li>
+                <li><a href="#iran">Iran</a></li>
+                <li><a href="#israel">Israel</a></li>
+                <li><a href="#usa">United States</a></li>
+                <li><a href="#scenarios">Scenario Analysis</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#map">Regional Map</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <div class="hero">
+            <h1>The Triangle of Power</h1>
+            <p class="subtitle-hero">Iran, Israel & the United States</p>
+            <p class="subtitle-hero">Navigating the World's Most Complex Geopolitical Relationship</p>
+            <div class="lang-tags">
+                <span class="lang-tag">🇺🇸 English</span>
+                <span class="lang-tag">🇫🇷 Français</span>
+                <span class="lang-tag">🇮🇱 עברית</span>
+            </div>
+        </div>
+
+        <section id="intro">
+            <h2>Introduction: The Geopolitical Triangle</h2>
+            <p>
+                The relationship between <span class="highlight">Iran, Israel, and the United States</span> represents one of the most intricate and consequential geopolitical dynamics of the 21st century. This triangular relationship shapes Middle Eastern politics, global energy markets, nuclear non-proliferation efforts, and international security architecture.
+            </p>
+            <p>
+                Since the 1979 Islamic Revolution in Iran, which transformed a regional ally of both Israel and the United States into an ideological adversary, the dynamics have evolved through multiple phases: from cautious engagement to open confrontation, from covert operations to public diplomacy, and from proxy conflicts to direct military strikes.
+            </p>
+            <p>
+                Understanding this triangle requires analyzing not just bilateral relationships, but the complex interplay where each actor's decisions ripple through the entire system. Israel's security concerns about Iran's nuclear program, America's broader Middle East strategy, and Iran's regional ambitions create a strategic puzzle where military deterrence, economic sanctions, diplomatic negotiations, and covert operations all play crucial roles.
+            </p>
+
+            <div class="lang-section french">
+                <h3>Le Triangle Géopolitique</h3>
+                <p>
+                    La relation entre l'Iran, Israël et les États-Unis constitue l'une des dynamiques géopolitiques les plus complexes et déterminantes du XXIe siècle. Ce triangle façonne la politique du Moyen-Orient, les marchés énergétiques mondiaux, les efforts de non-prolifération nucléaire et l'architecture de sécurité internationale.
+                </p>
+            </div>
+
+            <div class="lang-section hebrew">
+                <h3>המשולש הגאופוליטי</h3>
+                <p>
+                    היחסים בין איראן, ישראל וארצות הברית מייצגים את אחת הדינמיקות הגאופוליטיות המורכבות והמשמעותיות ביותר של המאה ה-21. משולש זה מעצב את הפוליטיקה במזרח התיכון, את שווקי האנרגיה העולמיים, את המאמצים למניעת הפצת נשק גרעיני ואת מבנה הביטחון הבינלאומי.
+                </p>
+            </div>
+        </section>
+
+        <section id="iran">
+            <h2>Iran: Regional Power & Nuclear Ambitions</h2>
+            
+            <h3>Nuclear Program</h3>
+            <p>
+                Iran's nuclear program remains at the heart of international tensions. Officially civilian and peaceful, Western intelligence agencies and Israel assert that Iran has maintained the capability to develop nuclear weapons. The program includes:
+            </p>
+            <ul>
+                <li><strong>Uranium Enrichment:</strong> Iran has enriched uranium up to 60% purity, approaching weapons-grade levels (90%)</li>
+                <li><strong>Heavy Water Reactor:</strong> The Arak facility capable of producing plutonium</li>
+                <li><strong>Research & Development:</strong> Advanced centrifuge development despite JCPOA restrictions</li>
+                <li><strong>Breakout Time:</strong> Estimated at weeks to months to produce enough fissile material for one bomb</li>
+            </ul>
+
+            <h3>Regional Proxies: The Axis of Resistance</h3>
+            <p>
+                Iran has cultivated a network of allied militias and political movements across the Middle East, creating strategic depth and the ability to project power beyond its borders:
+            </p>
+            <ul>
+                <li><strong>Hezbollah (Lebanon):</strong> Most sophisticated proxy with 130,000+ rockets, political control in Lebanon</li>
+                <li><strong>Hamas & Palestinian Islamic Jihad (Gaza):</strong> Financial and military support, ideological alignment</li>
+                <li><strong>Houthi Movement (Yemen):</strong> Iranian weapons and training, control of northern Yemen, maritime threats</li>
+                <li><strong>Iraqi Militias:</strong> Kata'ib Hezbollah, Asa'ib Ahl al-Haq, and others within the PMF framework</li>
+                <li><strong>Syrian Government:</strong> Critical ally, Iranian military presence in Syria</li>
+            </ul>
+
+            <h3>Economic Sanctions & Resilience</h3>
+            <p>
+                Iran has faced waves of international sanctions since 1979, intensifying dramatically under the "maximum pressure" campaign (2018-2021). Despite severe economic impacts including currency devaluation, inflation exceeding 40%, and isolation from international financial systems, Iran has developed:
+            </p>
+            <ul>
+                <li>Shadow banking and cryptocurrency networks</li>
+                <li>Oil smuggling operations through intermediaries</li>
+                <li>Barter trade with sanctioned economies (Venezuela, Russia, China)</li>
+                <li>Domestic production of previously imported goods</li>
+            </ul>
+
+            <div class="lang-section french">
+                <h3>L'Iran: Puissance Régionale</h3>
+                <p>
+                    Le programme nucléaire iranien demeure au cœur des tensions internationales. L'Iran a développé un réseau de milices alliées à travers le Moyen-Orient, créant une profondeur stratégique et la capacité de projeter sa puissance au-delà de ses frontières. Le Hezbollah au Liban, le Hamas à Gaza, les Houthis au Yémen et diverses milices irakiennes constituent cet "axe de résistance".
+                </p>
+            </div>
+        </section>
+
+        <section id="israel">
+            <h2>Israel: Security Strategy & Regional Dynamics</h2>
+
+            <h3>Defense Posture Against Iran</h3>
+            <p>
+                Israel views Iran as an <span class="highlight">existential threat</span> and has developed a multi-layered strategy to counter Iranian influence:
+            </p>
+            <ul>
+                <li><strong>The "Begin Doctrine":</strong> Preventive military action against nuclear threats (Iraq 1981, Syria 2007)</li>
+                <li><strong>Mossad Operations:</strong> Covert sabotage, cyber attacks (Stuxnet), assassinations of nuclear scientists</li>
+                <li><strong>Air Defense:</strong> Iron Dome, David's Sling, Arrow systems protecting against rocket attacks</li>
+                <li><strong>"Campaign Between Wars":</strong> Continuous airstrikes in Syria targeting Iranian military positions</li>
+                <li><strong>Intelligence Superiority:</strong> Deep penetration of Iranian nuclear program (Nuclear Archive operation 2018)</li>
+            </ul>
+
+            <h3>US-Israel Strategic Alliance</h3>
+            <p>
+                The relationship between Israel and the United States represents one of the most durable alliances in modern history:
+            </p>
+            <ul>
+                <li><strong>Military Aid:</strong> $3.8 billion annually under 10-year Memorandum of Understanding</li>
+                <li><strong>Intelligence Sharing:</strong> Deep cooperation on Iran, regional threats, counterterrorism</li>
+                <li><strong>Diplomatic Support:</strong> US veto power in UN Security Council protecting Israeli interests</li>
+                <li><strong>Technology Partnership:</strong> Joint development of missile defense, cybersecurity systems</li>
+            </ul>
+
+            <h3>Abraham Accords & Regional Normalization</h3>
+            <p>
+                The Abraham Accords (2020) marked a historic shift in Middle Eastern diplomacy, with Israel normalizing relations with the UAE, Bahrain, Morocco, and Sudan. Key implications:
+            </p>
+            <ul>
+                <li>Shared concern over Iranian regional behavior</li>
+                <li>Economic and technological cooperation opportunities</li>
+                <li>Intelligence sharing against common threats</li>
+                <li>Potential framework for broader Arab-Israeli peace</li>
+                <li>Saudi Arabia as the prize for future normalization</li>
+            </ul>
+
+            <div class="lang-section hebrew">
+                <h3>ישראל: אסטרטגיית הביטחון</h3>
+                <p>
+                    ישראל רואה באיראן איום קיומי ופיתחה אסטרטגיה רב-שכבתית להתמודדות עם ההשפעה האיראנית. "דוקטרינת בגין" קובעת פעולה צבאית מונעת נגד איומים גרעיניים. המוסד מבצע פעולות חשאיות, מתקפות סייבר והתנקשויות במדעני גרעין איראנים. מערכות ההגנה האווירית - כיפת ברזל, קלע דוד וחץ - מגנות מפני התקפות רקטות. ישראל ממשיכה בתקיפות אוויריות בסוריה נגד עמדות צבאיות איראניות.
+                </p>
+            </div>
+        </section>
+
+        <section id="usa">
+            <h2>United States: Balancing Middle East Policy</h2>
+
+            <h3>Strategic Interests & Evolution</h3>
+            <p>
+                American policy toward Iran and the broader Middle East has oscillated between engagement and confrontation across multiple administrations:
+            </p>
+            <ul>
+                <li><strong>Energy Security:</strong> Historically central, now less critical due to US shale revolution</li>
+                <li><strong>Nuclear Non-Proliferation:</strong> Preventing Iran from acquiring nuclear weapons</li>
+                <li><strong>Israeli Security:</strong> Bipartisan commitment to Israel's qualitative military edge</li>
+                <li><strong>Regional Stability:</strong> Preventing conflicts that could draw in US forces</li>
+                <li><strong>Counterterrorism:</strong> Combating groups designated as terrorist organizations</li>
+            </ul>
+
+            <h3>The JCPOA Saga</h3>
+            <p>
+                The Joint Comprehensive Plan of Action (2015) represented a landmark diplomatic achievement and remains deeply controversial:
+            </p>
+            <ul>
+                <li><strong>Obama Administration (2015):</strong> Negotiated agreement limiting Iran's nuclear program for sanctions relief</li>
+                <li><strong>Trump Administration (2018):</strong> Withdrew from JCPOA, imposed "maximum pressure" sanctions</li>
+                <li><strong>Biden Administration (2021-present):</strong> Attempted indirect negotiations; limited progress due to mutual distrust</li>
+                <li><strong>Key Issues:</strong> Sunset clauses, ballistic missiles not covered, regional activities unaddressed</li>
+            </ul>
+
+            <h3>Military Presence & Deterrence</h3>
+            <p>
+                The United States maintains substantial military capabilities in the region to deter Iranian aggression:
+            </p>
+            <ul>
+                <li>Fifth Fleet based in Bahrain for maritime security</li>
+                <li>Air bases in Qatar, UAE, Kuwait, and Saudi Arabia</li>
+                <li>Carrier strike groups regularly deployed to the Persian Gulf</li>
+                <li>Patriot and THAAD missile defense systems protecting allies</li>
+                <li>Special operations forces for counterterrorism missions</li>
+            </ul>
+
+            <div class="lang-section french">
+                <h3>États-Unis: Équilibrer la Politique au Moyen-Orient</h3>
+                <p>
+                    La politique américaine envers l'Iran et le Moyen-Orient a oscillé entre engagement et confrontation à travers plusieurs administrations. L'accord nucléaire JCPOA de 2015 représentait une réalisation diplomatique majeure, mais l'administration Trump s'en est retirée en 2018, imposant des sanctions de "pression maximale". L'administration Biden a tenté des négociations indirectes avec des progrès limités en raison de la méfiance mutuelle.
+                </p>
+            </div>
+        </section>
+
+        <section id="scenarios">
+            <h2>Scenario Analysis: Future Pathways</h2>
+            <p>
+                Three primary scenarios shape thinking about the future of Iran-Israel-US relations. Each carries distinct probabilities, triggers, and consequences.
+            </p>
+
+            <div class="scenario-grid">
+                <div class="scenario-card escalation">
+                    <h4>🔥 Military Escalation</h4>
+                    <span class="probability">Probability: 30-35%</span>
+                    <p><strong>Triggers:</strong></p>
+                    <ul>
+                        <li>Iran crosses nuclear threshold (90% enrichment or weaponization)</li>
+                        <li>Major proxy attack killing Americans or Israelis</li>
+                        <li>Closure of Strait of Hormuz</li>
+                    </ul>
+                    <p><strong>Likely Outcomes:</strong></p>
+                    <ul>
+                        <li>Israeli strikes on Iranian nuclear facilities</li>
+                        <li>Iranian retaliation via proxies and direct missile attacks</li>
+                        <li>US drawn into conflict to support Israel</li>
+                        <li>Regional war involving Hezbollah, Syria, Iraq</li>
+                        <li>Global economic disruption (oil prices spike)</li>
+                    </ul>
+                </div>
+
+                <div class="scenario-card diplomacy">
+                    <h4>🕊️ Diplomatic Breakthrough</h4>
+                    <span class="probability">Probability: 20-25%</span>
+                    <p><strong>Enabling Factors:</strong></p>
+                    <ul>
+                        <li>Iranian regime change or significant political reform</li>
+                        <li>US willingness for comprehensive engagement</li>
+                        <li>Regional mediation by Gulf states or Europe</li>
+                        <li>Economic crisis forcing Iranian compromise</li>
+                    </ul>
+                    <p><strong>Likely Outcomes:</strong></p>
+                    <ul>
+                        <li>New nuclear agreement with stricter terms</li>
+                        <li>Gradual sanctions relief tied to verifiable compliance</li>
+                        <li>Regional security dialogue including missile programs</li>
+                        <li>Reduction in proxy conflicts</li>
+                        <li>Economic integration of Iran into global markets</li>
+                    </ul>
+                </div>
+
+                <div class="scenario-card status-quo">
+                    <h4>⚖️ Prolonged Status Quo</h4>
+                    <span class="probability">Probability: 40-45%</span>
+                    <p><strong>Characteristics:</strong></p>
+                    <ul>
+                        <li>Iran maintains nuclear threshold status (weeks from bomb)</li>
+                        <li>Continued low-intensity conflict (shadow war)</li>
+                        <li>Periodic escalations followed by de-escalation</li>
+                        <li>Sanctions remain with limited enforcement</li>
+                    </ul>
+                    <p><strong>Likely Outcomes:</strong></p>
+                    <ul>
+                        <li>Neither war nor peace - managed instability</li>
+                        <li>Israeli covert operations continue</li>
+                        <li>Proxy conflicts persist but contained</li>
+                        <li>Gradual Iranian nuclear advances</li>
+                        <li>Regional normalization proceeds slowly</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="lang-section french">
+                <h3>Analyse des Scénarios</h3>
+                <p>
+                    Trois scénarios principaux façonnent la réflexion sur l'avenir des relations Iran-Israël-USA: l'escalade militaire (30-35% de probabilité) déclenchée par le franchissement du seuil nucléaire iranien; une percée diplomatique (20-25%) nécessitant un changement de régime ou une réforme politique significative en Iran; et un statu quo prolongé (40-45%) caractérisé par une instabilité gérée, des conflits de faible intensité et des avancées nucléaires graduelles iraniennes.
+                </p>
+            </div>
+        </section>
+
+        <section id="timeline">
+            <h2>Timeline: Key Events (2014-2024)</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2015</div>
+                    <div class="timeline-content">
+                        <strong>JCPOA Signed</strong>
+                        <p>Iran and P5+1 reach nuclear agreement. Iran agrees to limit enrichment in exchange for sanctions relief.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2018</div>
+                    <div class="timeline-content">
+                        <strong>US Withdraws from JCPOA</strong>
+                        <p>Trump administration exits nuclear deal, reimposing "maximum pressure" sanctions on Iran.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2019</div>
+                    <div class="timeline-content">
+                        <strong>Tanker Attacks & Drone Strike</strong>
+                        <p>Attacks on oil tankers in Gulf of Oman. US drone strike kills Iranian General Qasem Soleimani in Iraq.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2020</div>
+                    <div class="timeline-content">
+                        <strong>Abraham Accords & Fakhrizadeh Assassination</strong>
+                        <p>Israel normalizes relations with UAE and Bahrain. Iran's top nuclear scientist assassinated in Tehran.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2021</div>
+                    <div class="timeline-content">
+                        <strong>Raisi Elected, Vienna Talks Resume</strong>
+                        <p>Hardliner Ebrahim Raisi becomes Iran's president. JCPOA revival negotiations in Vienna stall.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2022</div>
+                    <div class="timeline-content">
+                        <strong>Ukraine War Impact & Protests</strong>
+                        <p>Iran supplies drones to Russia. Mahsa Amini protests erupt. Nuclear talks collapse definitively.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <strong>Israel-Hamas War Begins</strong>
+                        <p>October 7 attack by Hamas. Israel launches war in Gaza. Regional tensions spike with Houthi attacks on shipping.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-content">
+                        <strong>Direct Iran-Israel Exchanges</strong>
+                        <p>April: Iran launches direct missile/drone attack on Israel. Israel conducts limited retaliatory strike. Shadow war intensifies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="map">
+            <h2>Regional Map: The Triangle of Power</h2>
+            <div class="map-container">
+                <div class="map">
+                    <div class="country usa">
+                        🇺🇸<br>USA
+                    </div>
+                    <div class="country iran">
+                        🇮🇷<br>IRAN
+                    </div>
+                    <div class="country israel">
+                        🇮🇱<br>ISRAEL
+                    </div>
+                    <div class="tension-line line1"></div>
+                    <div class="tension-line line2"></div>
+                    <div class="tension-line line3"></div>
+                </div>
+                <p style="color: white; text-align: center; margin-top: 1.5rem; font-family: 'Inter', sans-serif;">
+                    <em>Interactive representation showing the three primary actors and their complex web of relations</em>
+                </p>
+            </div>
+
+            <div class="lang-section hebrew">
+                <h3>מפה אזורית: משולש הכוח</h3>
+                <p>
+                    המפה מציגה את שלושת השחקנים העיקריים - ארצות הברית, איראן וישראל - והקשרים המורכבים ביניהם. הקווים המחברים מסמלים את מערכות היחסים הדינמיות והמתוחות שמעצבות את הגאופוליטיקה במזרח התיכון.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Conclusion: Managing an Unstable Equilibrium</h2>
+            <p>
+                The Iran-Israel-United States triangle represents a case study in strategic complexity. No single actor can achieve its objectives without considering the reactions and counter-moves of the others. Israel cannot eliminate Iran's nuclear program without US acquiescence or active support. Iran cannot achieve regional hegemony while facing combined Israeli-American opposition. The United States cannot fully disengage from the Middle East without risking Israeli security and regional stability.
+            </p>
+            <p>
+                The most likely near-term future involves continued management of an unstable equilibrium: periodic crises, limited military exchanges, ongoing sanctions, covert operations, and failed diplomatic initiatives. This "neither war nor peace" scenario is sustainable but carries inherent risks of miscalculation and uncontrolled escalation.
+            </p>
+            <p>
+                Breaking free from this cycle requires either: (1) a dramatic shift in Iranian domestic politics; (2) a comprehensive regional security architecture involving all parties; or (3) acceptance of Iranian nuclear threshold status with robust deterrence. Each path has been attempted and failed. The question is not whether the current approach is optimal - it clearly isn't - but whether any of the alternatives are politically feasible and strategically sound.
+            </p>
+            <p>
+                Understanding this triangle is essential not just for policymakers but for anyone seeking to comprehend 21st-century geopolitics. The decisions made in Tehran, Jerusalem, and Washington ripple across global markets, international institutions, and the lives of millions. The stakes could not be higher.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Triangle: Geopolitical Analysis | Research-based analysis of Iran-Israel-US relations</p>
+        <p style="margin-top: 1rem; font-size: 0.85rem;">
+            🇺🇸 English | 🇫🇷 Français | 🇮🇱 עברית
+        </p>
+    </footer>
+
+    <script>
+        // Theme Toggle
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            
+            const btn = document.querySelector('.theme-toggle');
+            btn.textContent = newTheme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode';
+            
+            localStorage.setItem('theme', newTheme);
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        if (savedTheme === 'dark') {
+            document.querySelector('.theme-toggle').textContent = '☀️ Light Mode';
+        }
+
+        // Sidebar Toggle
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+
+        // Smooth Scroll & Active Nav
+        document.querySelectorAll('.sidebar nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    
+                    // Update active link
+                    document.querySelectorAll('.sidebar nav a').forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Close sidebar on mobile
+                    if (window.innerWidth <= 1024) {
+                        document.getElementById('sidebar').classList.remove('active');
+                    }
+                }
+            });
+        });
+
+        // Intersection Observer for Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
